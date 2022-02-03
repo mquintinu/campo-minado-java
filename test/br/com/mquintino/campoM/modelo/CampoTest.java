@@ -136,6 +136,12 @@ class CampoTest {
 		assertTrue(campo22.isAberto() && campo11.isFechado());
 	}
 
+	@Test
+	void testaToString(){
+		campo.alternarMarcacao();
+		assertEquals("x", campo.toString());
+	}
+
 
 
 }
